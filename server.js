@@ -15,7 +15,8 @@ app.use(cors({ origin: true }));
 app.use(express.json());
 
 //API router
-app.get("/", (req, res) => res.status(200).send("Chal agyi teri api Bhai"));
+app.get("/", (req, res) => res.status(200).send("connected
+"));
 
 app.post("/payments/create", async (request, response) => {
   const total = request.query.total;
